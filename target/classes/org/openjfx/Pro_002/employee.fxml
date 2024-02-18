@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008E89;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Pro_002.employeeController">
+   <children>
+      <TableView fx:id="TableUser" layoutX="29.0" layoutY="129.0" prefHeight="234.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="coid" prefWidth="60.0" text="id" />
+          <TableColumn fx:id="cofname" prefWidth="136.79998779296875" text="first_name" />
+            <TableColumn fx:id="colname" prefWidth="120.800048828125" text="last_name" />
+            <TableColumn fx:id="coemail" prefWidth="117.5999755859375" text="email" />
+            <TableColumn fx:id="cosalary" prefWidth="105.60001220703123" text="salary" />
+        </columns>
+      </TableView>
+      <Button fx:id="sen" layoutX="385.0" layoutY="90.0" mnemonicParsing="false" onAction="#findByName" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 10px; -fx-background-color: #FFD32D;" text="Search" />
+      <TextField fx:id="txtID" layoutX="29.0" layoutY="88.0" prefHeight="30.0" prefWidth="290.0" promptText="Enter First_name" style="-fx-background-radius: 20px;" />
+      <Button fx:id="gg" layoutX="484.0" layoutY="90.0" mnemonicParsing="false" onAction="#switchToG" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 10px; -fx-background-color: #FFD32D;" text="Graph" />
+      <Label layoutX="202.0" layoutY="12.0" text="Personnel Information" textFill="#fcfafa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="70.0" text="You can search dor your information and salary graph" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="70.0" text=" Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchToHome" opacity="0.0" prefHeight="26.0" prefWidth="70.0" text="Back">
+         <font>
+            <Font name="Bernard MT Condensed" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
